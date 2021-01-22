@@ -25,11 +25,11 @@ After, use:
 ```
 
 ## Instances files
-The instance files are located in this [repo](https://github.com/NicolasCampana/ALBHW-Instances), as the respectively results.
+The instance files are located in this [repo](https://github.com/NicolasCampana/ALBHW-Instances), as well as the respectively results.
 
 # OUTPUT 
-If the parameters <output-folder> and <output-rules-filename> are provided,
-the code generates five outputs:
+If the parameters "output-folder" and "output-rules-filename" are provided,
+the code generates five files as output:
 - Exact value output for the instance (MCMI)
 - Assembly line configuration for the best heuristic
 - Assembly line configuration for the MIP1 
