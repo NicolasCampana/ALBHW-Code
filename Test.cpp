@@ -28,14 +28,8 @@ int main(int argc, char* argv[] ) {
     string filename(argv[2]);
     string destination(argv[3]);
     string instance(entry + filename);
-    //string outputRulesHeuristic(argv[4]);
-        
-    try {
-        TestHeuristics* t = new TestHeuristics(filename, destination, instance, "/Regras.csv");
-        t->main();
-
-    } catch(exception e) {
-        cout << e.what();
-        cout << "Deu ruim ";
-    } 
+    //string outputRulesHeuristic(argv[4]);        
+    TestHeuristics* t = new TestHeuristics(filename, destination, instance, "/Regras.csv");
+    t->main();
+    return 0;
 }

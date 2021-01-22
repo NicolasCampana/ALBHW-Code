@@ -1,6 +1,12 @@
 # Assembly line balancing with hierarchical worker assignment (ALBHW)
 
----------------- CODE STRUCTURE --------------------
+## DISCLAIMER
+This code is not complete and probably with some memory leak. The latest version has been lost.
+
+## ---------------- SOLVER ----------------------------
+The implementation uses Gurobi as mathematical solver.
+
+## ---------------- CODE STRUCTURE --------------------
 -> HEADERS .h
    - AlbhwHeuristic (
    - AlbhwHeuristicResult
@@ -16,18 +22,12 @@
    - AlbhwStructure
    - TestClass
    
--> TESTE FILES
+-> TEST FILES
    - TestClass.cpp
    - TestAllWithRules.cpp
    - Test.cpp
-   
--> EXTRA FILES
-   - mainTester.py
-   
 
+## ---------------- MAKEFILE --------------------
 
----------------- MAKEFILE --------------------
-
-In the folder, do "make" on terminal, it will compile
-the main test file (Test.cpp).
+In the folder, do "make" on terminal, it will compile for **linux** the main test file (Test.cpp).
 

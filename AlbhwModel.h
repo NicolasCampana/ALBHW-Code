@@ -11,9 +11,10 @@ using namespace std;
 #include "AlbhwHeuristicResult.h"
 #include "Graph.cpp"
 
+
 class AlbhwModel {
 private:
-    GRBEnv *env;
+    GRBEnv* env;
     string instancePath;
     AlbhwStructure* instanceProblem;
     int *improveMh(int **twTimes, std::vector<int> tTypes, int numT, int numW, int cycT);
@@ -31,6 +32,7 @@ public:
     AlbhwHeuristicResult* resolveAlbhwPaper();
     AlbhwModel(string instance, int testarTudo);
     AlbhwModel();
+    ~AlbhwModel();
     int minOfWorkers(int h);
     void testModels();
     void testSmall();
@@ -44,6 +46,7 @@ public:
     void printResultsTerminal(AlbhwHeuristicResult* res); // Just printing on the screen the results
     void printResultsHeur(AlbhwHeuristicResult* res, int regraT, int regraW, int print, string destination, string filename); // Printing on file
     void createALBHWAux();
+    
     /*
     vector<string> addSmallPaths();
     vector<string> addMediumPaths();

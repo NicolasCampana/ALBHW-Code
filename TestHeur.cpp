@@ -79,7 +79,11 @@ class TestHeuristics {
             AlbhwHeuristicResult* result2 = heur->Heuristic(melhorTA, melhorTR);
             AlbhwHeuristicResult* mip2 = m2->LocalSearchMIP2(result2);
             m->printResultsHeur(mip2, melhorTA, melhorTR, 3, destination, filename);
-
+            delete m;
+            delete m1;
+            delete m2;
+            
+            return 0;
         }
 
 };

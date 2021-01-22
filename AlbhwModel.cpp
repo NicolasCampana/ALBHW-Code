@@ -1402,7 +1402,7 @@ AlbhwHeuristicResult* AlbhwModel::RunVND(AlbhwHeuristicResult *heurRes, int regr
 }
 void AlbhwModel::createALBHWAux() {
     try {
-        env = new GRBEnv();
+        this->env = new GRBEnv();
     } catch (GRBException e) {
         std::cout << "Error code = " << e.getErrorCode() << std::endl;
         std::cout << e.getMessage() << std::endl;
@@ -1479,6 +1479,9 @@ void AlbhwModel::setInstancePath(string instance) {
     this->instancePath = instance;
 }
 
+AlbhwModel::~AlbhwModel() {
+    delete env;
+}
 
 string AlbhwModel::getInstancePath() {
     return this->instancePath;

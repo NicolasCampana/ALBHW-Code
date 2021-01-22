@@ -165,7 +165,7 @@ AlbhwHeuristicResult* AlbhwHeuristic::Heuristic(int optRegra, int optTrab) {
         cout << "All tasks" << endl;
         for(int w = 0; w < this->instanceProblem->numW; ++w ) {
             cout << "Worker: " << w << " : ";
-            for(int i = 0; i < setofTasks[w].size(); ++i) {
+            for(unsigned int i = 0; i < setofTasks[w].size(); ++i) {
                 cout << setofTasks[w].at(i) << " ";
             }
           }

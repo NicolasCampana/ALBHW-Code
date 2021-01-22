@@ -71,7 +71,7 @@ void AlbhwHeuristicResult::imprimeArquivo() {
             arq << "]" << endl;
         }
     } else {
-        cout << " Failed!!"
+        cout << " Failed!!";
     }
     arq.close();
 }
